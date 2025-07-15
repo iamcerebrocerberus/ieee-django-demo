@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Feedback</title>
+</head>
+<body>
+    <h1>All Feedback</h1>
+    <ul>
+        {% for feedback in feedbacks %}
+        <li><strong>{{ feedback.name }}</strong> ({{ feedback.email }})<br>{{ feedback.message }}<br><small>{{ feedback.submitted_at }}</small></li>
+        {% empty %}
+        <li>No feedback yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

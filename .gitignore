@@ -1,0 +1,4 @@
+venv
+cred.txt
+__pycache__/
+db.sqlite3
