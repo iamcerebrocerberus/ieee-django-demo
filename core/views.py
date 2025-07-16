@@ -4,6 +4,7 @@ from .forms import FeedbackForm
 from .models import Feedback
 
 
+# @login_required
 def feedback_form(request):
     if request.method == 'POST':
         form = FeedbackForm(request.POST)
@@ -14,7 +15,7 @@ def feedback_form(request):
         form = FeedbackForm()
     return render(request, 'feedback_form.html', {'form': form})
 
-
+# @login_required
 def feedback_thanks(request):
     return render(request, 'thanks.html') 
 

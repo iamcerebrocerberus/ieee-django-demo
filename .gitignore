@@ -3,3 +3,4 @@ cred.txt
 __pycache__/
 db.sqlite3
 .env
+for_participants.txt
