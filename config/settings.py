@@ -133,3 +133,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
     'https://ieee-demo.fly.dev',
 ]
+
+LOGIN_REDIRECT_URL = "/feedback/"
